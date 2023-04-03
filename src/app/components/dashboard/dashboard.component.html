@@ -1,0 +1,46 @@
+<app-navbar (onToggleSideNav)="onToggleSideNav($event)"></app-navbar>
+
+<div class="dashboard">
+    <div class="top-dashboard">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar aquí">
+        </div>
+        <div class="gral-items">
+            <div class="settings">
+                <button class="button-i" ><i class="far fa-cog"></i></button>
+                
+            </div>
+            <div class="notification">
+                <button class="button-i" ><i class="far fa-bell"></i></button>
+            </div>
+            <div class="user">
+                <div class="user-img">
+                    <button class="button-i" ><img class="img-user" src="\assets\user.png" alt=""></button>
+                </div>
+                <div class="user-name">
+                    <h3 class="username">Tomás Nieto</h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <h3 class="start-title">Inicio</h3>
+    <div class="cards" >
+        <app-card class="app-card" style="display: flex;"></app-card>
+    </div>
+
+    <div class="section-charts">
+        <div class="chart col-md-6 col-sm-12 col-xs-12">
+            <app-charts></app-charts>
+        </div>
+        <div class="transactions-table col-md-5 col-sm-12 col-xs-12">
+           <app-transacts></app-transacts>
+        </div>
+    </div>
+    
+      <div class="tablediv">
+       <app-debts></app-debts>
+      </div>
+</div>

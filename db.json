@@ -1,0 +1,66 @@
+{
+    "usuarios": [
+      {
+        "id": 1,
+        "numberDni": 41481655,
+        "password": "tomi"
+      }
+    ],
+
+    "navbar": [
+        {
+            "routeLink": "dashboard",
+            "icon": "fal fa-home",
+            "label": "Inicio"
+        },
+        {
+            "routeLink": "dashboard",
+            "icon": "fal fa-credit-card-blank",
+            "label": "Tarjetas"
+        },
+        {
+            "routeLink": "dashboard",
+            "icon": "fal fa-id-card",
+            "label": "Prestamos"
+        },
+        {
+            "routeLink": "dashboard",
+            "icon": "fas fa-exchange-alt",
+            "label": "Operaciones"
+        },
+        {
+            "routeLink": "dashboard",
+            "icon": "far fa-archive",
+            "label": "Te Ofrecemos"
+        },
+        {
+            "routeLink": "dashboard",
+            "icon": "fal fa-shield",
+            "label": "Seguros"
+        },
+        {
+            "routeLink": "dashboard",
+            "icon": "fal fa-gift",
+            "label": "Puntos"
+        },
+        {
+            "routeLink": "dashboard",
+            "icon": "far fa-question-circle",
+            "label": "Ayuda"
+        },
+        {
+            "routeLink": "",
+            "icon": "fas fa-sign-out",
+            "label": "Cerrar sesión"
+        }    
+      ],
+      "debts": [
+        {
+            "totalAmount": "800.000",
+            "dues": "Cuota 10-24",
+            "emisionDate": "Marzo 25, 2022",
+            "Monthly": "50.036",
+            "Interest": "10% interés"
+        }
+      ]
+  }

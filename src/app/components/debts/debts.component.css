@@ -1,0 +1,45 @@
+.table{
+    margin-top: 50px;
+}
+
+
+.table>tbody {
+    vertical-align: middle;
+}
+tbody{
+    background-color: white !important;
+}
+tr{
+    height: 100px !important;
+}
+.table>:not(caption)>*>* {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: var(--bs-border-width);
+    /* box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg); */
+}
+
+.border-blue {
+    border-left: solid rgb(56, 56, 163);
+  }
+
+.blue-btn{
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(56, 56, 163);
+    padding: 5px;
+    border-color:rgb(56, 56, 163);
+
+}
+
+/* ---------------------- RESPONSIVE STYLE ----------------------------*/
+
+@media(max-width: 575px){
+    .table{
+        margin-top: 650px;
+        
+    }
+    .dues, .interest, .btn-table{
+        display: none;
+    }
+}

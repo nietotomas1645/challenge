@@ -1,0 +1,52 @@
+.transactions-rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.pagination-controls{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    background: white;
+}
+
+h3{
+    padding: 25px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #000000 !important;
+    color: #fefefe;
+    cursor: default;
+    border-radius: 50px;
+}
+.pagination-controls {
+    border-radius: 25px;
+}
+.completado {
+    color: green;
+  }
+  
+  .cancelado {
+    color: red;
+  }
+
+/* --------------------- RESPONSIVE STYLE --------------------------- */
+
+@media(max-width: 575px){
+    h4{
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
+
+

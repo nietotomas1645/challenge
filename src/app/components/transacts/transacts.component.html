@@ -1,0 +1,20 @@
+<h3>Últimas transacciones</h3>
+<div class="container-transacts">
+    <div class="transactions-rows" *ngFor="let transact of transacts | paginate: { itemsPerPage: 4, currentPage: page }" >
+        <div class="status">
+            <h4>{{transact.name}}</h4>
+            <p>{{transact.status}}</p>
+        </div>
+        <h4>$ {{transact.amount}}</h4>
+        <div class="date">
+            <h5>{{transact.date}}</h5>
+            <p>{{transact.time}}</p>
+        </div>
+        <h4 [ngClass]="{'completado': transact.finishStatus === 'completado', 'cancelado': transact.finishStatus === 'cancelado'}">{{transact.finishStatus}}</h4>
+        <p>...</p>
+    </div>
+    <div class="pagination-controls">
+        <pagination-controls (pageChange)="page = $event" previousLabel="" nextLabel=""></pagination-controls>
+    </div>
+</div>
+

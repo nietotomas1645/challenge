@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body 
+{ 
+
+ overflow-x: hidden;
+
+}
+p {
+    margin-top: none;
+    /* margin-bottom: 1rem; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #000000 !important;
+    color: #fefefe;
+    cursor: default;
+    border-radius: 50px;
+}

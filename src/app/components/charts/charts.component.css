@@ -1,0 +1,22 @@
+.card {
+    border-radius: 25px;
+    box-shadow: 0 6px 15px 0 rgba(64, 79, 104, 0.05);
+    padding: 10px;
+    height: 554px !important;
+    /* max-height: 520px; */
+    border: none;
+}
+h3{
+    padding: 25px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* ---------------------- RESPONSIVE STYLE ------------------------------ */
+
+
+@media(max-width: 575px){
+    .card{
+        margin: 10px;
+    }
+}

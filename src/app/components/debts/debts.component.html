@@ -1,0 +1,26 @@
+<table class="table">
+    <thead style="background-color: transparent;">
+      <tr>
+        <th scope="col" ></th>
+        <th scope="col" >Monto total</th>
+        <th scope="col" class="dues">Cuotas</th>
+        <th scope="col">Fecha emisión</th>
+        <th scope="col">Mensual</th>
+        <th scope="col" class="interest">Tasa interés</th>
+        <th scope="col" class="btn-table"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let dato of datos" >
+        <td [ngClass]="{'border-blue': isChecked}" ><input type="checkbox" [(ngModel)]="isChecked" (change)="onCheckboxChange()"></td>
+        <td>{{dato.totalAmount}}</td>
+        <td class="dues">{{dato.dues}}</td>
+        <td>{{dato.emisionDate}}</td>
+        <td>{{dato.Monthly}}</td>
+        <td class="interest">{{dato.Interest}}</td>
+        <td class="btn-table"><button class="blue-btn">Cancelado</button></td>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>

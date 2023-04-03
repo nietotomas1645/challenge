@@ -1,0 +1,23 @@
+<div class="card" *ngFor="let card of cards">
+    <div class="cash">
+        <p class="cash-title">{{card.titleAmount}}</p>
+        <h5 class="amount">$ {{card.amount}}</h5>
+    </div>
+    <div class="card-number">
+        <p class="secret-number">
+            {{card.cardNumber | hideNumbers}}
+        </p>
+    </div>
+    <div class="gral-data">
+        <div class="owner">
+            <p class="owner-title">{{card.cardTitle}}</p>
+            <p class="owner-name">{{card.owner}}</p>
+        </div>
+        <div class="expiration">
+            <p class="expiration-title">{{card.expireTitle}}</p>
+            <p class="expiration-date">{{card.expireDate}}</p>
+        </div>
+    </div>
+</div>
+
+
